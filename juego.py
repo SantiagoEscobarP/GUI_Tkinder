@@ -128,6 +128,7 @@ p.nombre = raw_input("Cual es el nombre del personaje? ")
 print "(Escribe ayuda para obtener una lista de acciones)n"
 print "%s entra en una cueva oscura en busca de aventura." % p.nombre
  
+ 
 while(p.salud > 0):
   line = raw_input("> ")
   args = line.split()
@@ -141,17 +142,3 @@ while(p.salud > 0):
     if not commandFound:
       print "%s no se entiende la accion." % p.nombre
  
-"""
-Copyright 2010 Francesco Balducci
- 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
- 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
- 
-See  for a copy of the GNU General Public License.
